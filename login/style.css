@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.container_100{
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    flex-direction: row;
+}
+
+.direita, .esquerda{
+    display: flex;
+    flex: 1;
+}
+
+/* LADO DIREITO DO NOSSO SITE */
+.direita{
+    display: flex;
+    align-items: center;
+    background-color: #FFFFFF;
+    padding-left: 8%;
+}
+
+.lado_direito{
+    max-width: 450px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lado_direito h1{
+    margin-bottom: 5px;
+    font-size: 35px;
+}
+
+.lado_direito input{
+    display: block;
+    width: 450px;
+    padding: 8px;
+    margin-top: 20px;
+    border-radius: 8px;
+    height: 50px;
+    border: 1px #1C1C1C solid;
+}
+.lado_direito button{
+    margin-top: 20px;
+    width: 450px;
+    padding: 8px 2px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background-color: 	#0056FB;
+    height: 50px;
+    border: none;
+    font-weight: bold;
+    color: #FFFFFF;
+
+}
+
+.lado_direito span{
+    margin-top: 15px;
+}
+
+/* FIM DO LADO DIREITO DO NOSSO SITE */
+
+/*INICIO DO LADO ESQUERDO*/
+.esquerda{
+    background-color: #0056FB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:0 8%;
+}
+
+.esquerda img{
+    margin-top: 20px;
+}
+
+.esquerda h1{
+    margin-top: 20px;
+    color: #FFFFFF;
+    font-size: 48px;
+
+}
+
+.esquerda p{
+    margin-top: 20px;
+    color: #FFFFFF;
+}
+
+/* FIM DO LADO ESQUERDO */
+
+/* INICIO DA RESPONSIVIDADE */
+@media(max-width:1172px){
+    .container_100{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lado_direito{
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .direita{
+        margin: 8px;
+        align-items: center;
+        justify-content: center;
+        padding: 0; 
+    }
+
+    .esquerda{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .esquerda img{
+        width: 300px;
+    }
+
+
+
+    .lado_direito input{
+        width: 100%;
+    }
+
+    .lado_direito button{
+        width: 100%;
+    }
+
+}
+
+/* FIM DA RESPONSIVIDADE */
